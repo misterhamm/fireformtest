@@ -10,19 +10,20 @@
         <input type="text" name="givenname" placeholder="Name">
         <input type="email" name="inputexample" placeholder="Email">
         <input type="submit">
-    </form>
-    
-    <script  src="http://src.fireform.org/fireform.min.js"></script>
-      <script>
+      </form>
+
+      <script type="application/javascript" src="http://src.fireform.org/fireform.min.js"></script>
+      <script type="application/javascript">
+          /* See more options at http://fireform.org/docs */
           options={
             emailNotification:"chris@misterhamm.com",
-            emailConfirmationName:"InputName",  //The form input we get the email from.
+            emailConfirmationName:"inputexample",  //The email input we will send a confirmation to 
             emailConfirmationFrom:"chris@misterhamm.com",  //Email appears as sent by this address.
-            emailConfirmationSubject:"Thanks for signing up",
+            emailConfirmationSubject:"Thanks for Signing Up",
             emailConfirmationBodyHTML:"<p>You have been signed up!</p>",
             emailConfirmationBodyText:"You have been signed up!"
           }
-          new Fireform('#MySelector', 'http://fireform.org/list/d2e727c8-8f7b-47b8-aca0-356cffd19ae6/Portfolio', options);
+          new Fireform('#MySelector', 'http://fireform.org/list/d2e727c8-8f7b-47b8-aca0-356cffd19ae6/Portfolio', options)
       </script>
 </body>
 </html>
